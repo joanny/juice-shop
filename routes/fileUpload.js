@@ -48,7 +48,7 @@ function handleZipFileUpload ({ file }, res, next) {
                 if (absolutePath.includes(path.resolve('.'))) {
                   entry.pipe(fs.createWriteStream('uploads/complaints/' + fileName).on('error', function (err) { next(err) }))
                 } else if (absolutePath.includes(path.resolve('/-'))) {
-                  entry.pipe(fs.createWriteStream('uploads/additional-data' + fileName).on('error', function (err) { next(err) }))
+                  entry.pipe(fs.createWriteStream('uploads/additional' + fileName).on('error', function (err) { next(err) }))
                 } else {
                   entry.autodrain()
                 }
