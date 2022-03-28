@@ -1,7 +1,5 @@
 name: $(Build.DefinitionName)-$(Build.BuildId)
 
-
-
 trigger:
 - develop
 
