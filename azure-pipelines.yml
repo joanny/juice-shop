@@ -18,4 +18,5 @@ steps:
     testType: 'app'
     failOnIssues: true
     monitorWhen: 'always'
+    additionalArguments: '--all-projects '
   
