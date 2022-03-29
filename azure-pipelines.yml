@@ -10,7 +10,6 @@ steps:
   inputs:
     serviceConnectionEndpoint: 'SnykDemo'
     testType: 'app'
-    failOnIssues: true
+    failOnIssues: false
     monitorWhen: 'always'
     additionalArguments: '--all-projects '
-  
