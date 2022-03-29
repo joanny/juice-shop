@@ -16,6 +16,6 @@ steps:
   inputs:
     serviceConnectionEndpoint: 'SnykDemo'
     testType: 'app'
-    monitorWhen: 'always'
     failOnIssues: true
-    targetFile: '$(Build.SourcesDirectory)'
+    monitorWhen: 'always'
+  
