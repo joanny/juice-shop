@@ -8,7 +8,8 @@ pool: 'AzureLocalWindows'
 steps:
 - task: Npm@1
   inputs:
-    command: 'install -force'
+    command: 'install'
+    workingDir: '$(Build.SourcesDirectory)/frontend'
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'SnykDemo'
