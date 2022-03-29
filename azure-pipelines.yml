@@ -6,6 +6,9 @@ trigger:
  
 pool: 'AzureLocalWindows'
 steps:
+- task: Npm@1
+  inputs:
+    command: 'install'
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'SnykDemo'
