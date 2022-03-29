@@ -6,12 +6,6 @@ trigger:
  
 pool: 'AzureLocalWindows'
 steps:
-- task: UseGitVersion@5
-  displayName: gitversion
-  inputs:
-    versionSpec: '5.x'
-    updateAssemblyInfo: false
- 
 - task: SnykSecurityScan@1
   inputs:
     serviceConnectionEndpoint: 'SnykDemo'
